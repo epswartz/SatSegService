@@ -2,10 +2,10 @@ test:
 	python -m pytest -vv .
 
 lint:
-	pylint --disable=R,C application.py
+	pylint --disable=R,C main.py
 
 run:
-	python application.py
+	python main.py
 
 install:
 	pip install --upgrade pip
