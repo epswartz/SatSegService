@@ -1,11 +1,11 @@
 from flask import Flask
 from datetime import datetime
 
-application = Flask(__name__)
+app = Flask(__name__)
 
 start_time = str(datetime.now())
 
-@application.route("/", methods=["GET"])
+@app.route("/", methods=["GET"])
 def main():
     """
     Handler for index.
@@ -18,4 +18,4 @@ def main():
     return "\n".join(resp)
 
 if __name__ == "__main__":
-    application.run(debug=False, host='127.0.0.1', port=8080)
+    app.run(debug=False, host='127.0.0.1', port=8080)
