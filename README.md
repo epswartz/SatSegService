@@ -1,2 +1,2 @@
-# CD_Flask
-Testing Flask CD
+# SatSegService
+An API for segmentation of visible spectrum satellite photos.
